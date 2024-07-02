@@ -1,0 +1,224 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "attendance_insights",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "employee"
+      ],
+      "schema": {
+        "properties": {
+          "employee": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "average_workHours": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "average_actualWorkHours": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "average_inTime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "average_outTime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "average_workHoursDiff": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "average_actualWorkHoursDiff": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "day_penalty": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "day_lateIn": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "day_earlyOut": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "day_exception": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "status": {
+            "properties": {
+              "type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "days": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "attendance_insights",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "employee"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "average_workHours"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "average_actualWorkHours"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "average_inTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "average_outTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "average_workHoursDiff"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "average_actualWorkHoursDiff"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "day_penalty"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "day_lateIn"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "day_earlyOut"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "day_exception"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "status"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "employee"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
